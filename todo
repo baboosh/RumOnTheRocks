@@ -1,0 +1,15 @@
+###TODO
+
+
+TODO [ ] Playtest quiz for errors and make some natural UI changes
+TODO [ ] Move new word button to under the enter button
+TODO [ ] Fix EB's csv list { sub check } get file from EB
+
+
+
+TODO### HARD ###
+
+TODO [ ] Use json file from Translate and put it into quiz
+TODO [ ] save & load for quiz ( Level, points, word list, last word done)
+TODO [ ] Achievements Page
+TODO [ ] Statisitcs Page

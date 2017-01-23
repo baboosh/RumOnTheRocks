@@ -1,0 +1,10 @@
+{
+  "wordsList": {
+    "0": "{\n    \"entry\": \"Voila qui est etrange ! s'etonna la vieille dame Qu'as-tu vu d'autre dans ton reve ? Tom fit mine de reflechir : Hum... voyons... tu parlais d'une porte qui venait de s'ouvrir. Si est alle la fermer. Et puis, tu disais que je n'etais pas mechant, et meme que j'avais un coeur d'or\",\n    \"fromlan\": \"French\",\n    \"lanto\": \"English\",\n    \"tolan\": \"\",\n    \"trans\": \"This is strange! If etonna the old lady that you saw on the other in your dream? Tom pretended to think: UM... Let's see... you were talking to a door that had opened. If it is close it all. And then you said that I was not nasty, and even I had a heart of gold\"\n}",
+    "1": "{\n    \"entry\": \"C'est facile, chuchota Tom.\",\n    \"fromlan\": \"French\",\n    \"lanto\": \"English\",\n    \"tolan\": \"\",\n    \"trans\": \"It of easy, whispered Tom.\"\n}"
+  },
+  "trans": "This is strange! If etonna the old lady that you saw on the other in your dream? Tom pretended to think: UM... Let's see... you were talking to a door that had opened. If it is close it all. And then you said that I was not nasty, and even I had a heart of gold",
+  "entry": "Voila qui est etrange ! s'etonna la vieille dame Qu'as-tu vu d'autre dans ton reve ? Tom fit mine de reflechir : Hum... voyons... tu parlais d'une porte qui venait de s'ouvrir. Si est alle la fermer. Et puis, tu disais que je n'etais pas mechant, et meme que j'avais un coeur d'or",
+  "from_lang": "French",
+  "to_lang": "English"
+}
