@@ -202,7 +202,7 @@ class Translate:
     # Move to translate.py
     def destroyFunc(self):
         self.newwindow.destroy()
-        self.focus_set()
+
 
         # Move to translate.py
     def new_file(self):
@@ -277,7 +277,7 @@ class Translate:
 
     @staticmethod
     def save_it():
-        filename = tk.filedialog.askopenfilename(defaultextension=".json", title="Translator")
+        filename = tk.filedialog.askopenfile(defaultextension=".json", title="Translator")
         print(filename + " SAVED IT")  # test
 
     # Move to Translate.py

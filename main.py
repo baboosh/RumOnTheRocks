@@ -14,10 +14,11 @@ import tkinter as tk
 from difflib import SequenceMatcher
 from PIL import Image, ImageTk
 import Translate
+import Achievements
 import Quiz
 import translations  # Import translations.py
 
-gInitialGeomtery = "951x498"
+gInitialGeomtery = "950x498"
 
 
 class SimpleAppTk(tk.Frame):
@@ -30,7 +31,8 @@ class SimpleAppTk(tk.Frame):
 
         self.quiz = None
         self.translate = None
-        self.states = {"None": 0, "Translate": 1, "Quiz": 2}
+        self.achievement = None
+        self.states = {"None": 0, "Translate": 1, "Quiz": 2,"Achievement":3}
         self.state = self.states["Translate"]
 
         self.backgroundImage = None
@@ -86,9 +88,20 @@ class SimpleAppTk(tk.Frame):
         elif self.state == self.states["Quiz"]:
             if self.quiz is None:
                 print("quiz frame is none")
+                self.quiz = Quiz.Quiz(self, self.mainFrame)
+            else:
+                print("Switched to Achievement")
+                self.quiz.quizFrame.destroy()
+                self.master.title('Achievement')
+                self.state = self.states["Achievement"]
+                self.achievement = Achievements.Achievement(self, self.mainFrame)
+        elif self.state == self.states["Achievement"]:
+            if self.achievement is None:
+                self.achievement = Achievements.Achievement(self ,self.mainFrame)
+                print("achievement frame is none")
             else:
                 print("Switched to Translate")
-                self.quiz.quizFrame.destroy()
+                self.achievement.achieveFrame.destroy()
                 self.master.title('Translator')
                 self.state = self.states["Translate"]
                 self.translate = Translate.Translate(self, self.mainFrame)
